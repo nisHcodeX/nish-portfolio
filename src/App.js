@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import RouterComponent from './router/Router';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
             codeX
           </span>
         </div>
-        
+        <RouterComponent />
       </div>
     </div>
   );
