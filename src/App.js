@@ -3,21 +3,16 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex justify-center bg-bgColor ">
+      <div className='max-w-[1240px] mt-4 h-[calc(100vh-16px)] w-[100%] text-xl'>
+        <div className='font-pacifico flex flex-grow items-center py-6'>
+          nish
+          <span className='pl-2 text-transparent bg-clip-text bg-gradient-to-r from-gradient-1 to-gradient-2'>
+            codeX
+          </span>
+        </div>
+        
+      </div>
     </div>
   );
 }
