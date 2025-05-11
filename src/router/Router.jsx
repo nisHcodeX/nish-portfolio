@@ -1,12 +1,15 @@
 import React, {lazy, Suspense} from 'react';
 import {createHashRouter, RouterProvider} from "react-router-dom";
-import NotFoundPage from '../layouts/notFound/index.jsx';
-import HomePage from '../pages/home/index.jsx';
-import ResumePage from '../pages/resume/index.jsx';
 
 // Lazy load pages
 const RootLayout = lazy(() => import('../layouts/rootLayout/index.jsx'));
 const ErrorPage = lazy(() => import('../layouts/errorPage/index.jsx'));
+const NotFoundPage = lazy(() => import('../layouts/notFound/index.jsx'));
+const HomePage = lazy(() => import('../pages/home/index.jsx'));
+const ResumePage = lazy(() => import('../pages/resume/index.jsx'));
+const WorkPage = lazy(() => import('../pages/work/index.jsx'));
+const ContactPage = lazy(() => import('../pages/contact/index.jsx'));
+const LeisurePage = lazy(() => import('../pages/leisure/index.jsx'));
 
 
 const router = createHashRouter([
@@ -28,6 +31,30 @@ const router = createHashRouter([
                 element: (
                     <Suspense fallback={<>Loading...</>}>
                         <ResumePage/>
+                    </Suspense>
+                )
+            },
+            {
+                path: 'work',
+                element: (
+                    <Suspense fallback={<>Loading...</>}>
+                        <WorkPage/>
+                    </Suspense>
+                )
+            },
+            {
+                path: 'contact',
+                element: (
+                    <Suspense fallback={<>Loading...</>}>
+                        <ContactPage/>
+                    </Suspense>
+                )
+            },
+            {
+                path: 'leisure',
+                element: (
+                    <Suspense fallback={<>Loading...</>}>
+                        <LeisurePage/>
                     </Suspense>
                 )
             },

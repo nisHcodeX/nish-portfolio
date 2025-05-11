@@ -9,10 +9,13 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        pacifico: ['Pacifico', 'cursive'], // Add Pacifico font family
+        pacifico: ['Pacifico', 'cursive'],
+        raleway: ['Raleway', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif']
       },
       colors: {
         "bgColor": "#F2F7FC",
+        "bgColor-1": "#E1E8EF",
         "gradient-1": "#FF9C1A",
         "gradient-2": "#ED250A",
       },
