@@ -3,7 +3,7 @@ import { PageLayout } from '../../components/card/pageLayout';
 
 const LeisurePage = () => {
   return (
-           <div className='p-6 pr-0 h-full'>
+           <div className='p-6 pr-0'>
           <PageLayout title='Leisure Time'>
             LeisurePage
           </PageLayout>

@@ -3,7 +3,7 @@ import { PageLayout } from '../../components/card/pageLayout'
 
 const WorkPage = () => {
   return (
-            <div className='p-6 pr-0 h-full'>
+            <div className='p-6 pr-0'>
               <PageLayout title='Portfolio'>
                 HomePage
               </PageLayout>

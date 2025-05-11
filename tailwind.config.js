@@ -18,6 +18,8 @@ const config = {
         "bgColor-1": "#E1E8EF",
         "gradient-1": "#FF9C1A",
         "gradient-2": "#ED250A",
+        "orange-1": "#FFE3BF",
+        "orange-2": "#FFEED9",
       },
     },
   },

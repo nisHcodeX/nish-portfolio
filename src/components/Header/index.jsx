@@ -68,12 +68,12 @@ const navList = [
 const Header = () => {
   const navigate = useNavigate();
   const currentRoute = window.location.hash.split('/')[1];
-  console.log('currentRoute', currentRoute)
+  const hash = window.location.hash;
   return (
-    <div className='flex justify-end'>
-      <div className='px-7 py-3 flex flex-row gap-4 border-[1px] border-bgColor1 rounded-2xl shadow-lg' >
+    <div className='flex justify-end sticky top-5'>
+      <div className='px-7 py-3 flex flex-row gap-4 border-[1px] border-bgColor bg-bgColor rounded-2xl shadow-lg' >
         {
-          navList.map((nav, index) => <NavButtonComponent key={index} active={`/${currentRoute}` == nav.path} onClick={() => navigate(nav.path)}>
+          navList.map((nav, index) => <NavButtonComponent key={index} active={`/${currentRoute}` == nav.path || (!hash && nav.path == '/')} onClick={() => navigate(nav.path)}>
             <div className='flex flex-col justify-center items-center w-[50px] h-[64px]' >
               {`/${currentRoute}` == nav.path ? nav.iconActive : nav.icon}
               <div>
